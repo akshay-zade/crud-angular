@@ -1,0 +1,45 @@
+<div class="container" >
+  <div class="child-container" >
+    <form [formGroup]="employeeForm" (ngSubmit)="save()" >
+      @if(isEdit) {
+        <h2>Update Employee Form</h2>
+      }@else {
+        <h2>Create Employee Form</h2>
+      }     
+       <div class="content">
+        <div class="input-box">
+          <label for="name" >Full Name</label>
+          <input type="text" placeholder="Enter Full Name" formControlName="name" required  >
+        </div>
+        <div class="input-box">
+          <label for="email" >Email</label>
+          <input type="email" placeholder="Enter Your Valid Email Address" formControlName="email" required  >
+        </div>
+        <div class="input-box">
+          <label for="phone" >Phone</label>
+          <input type="tel" placeholder="Enter Phone Number" formControlName="phone" required  >
+        </div>
+        <div class="input-box">
+          <label for="age" >Age</label>
+          <input type="number" placeholder="Enter Age" formControlName="age" required  >
+        </div>
+        <div class="input-box">
+          <label for="salary" >Salary</label>
+          <input type="text" placeholder="Enter Salary" formControlName="salary" required  >
+        </div>
+       </div>
+       <div class="alert">
+        <p>clicking sign up, you agree to our <a href="#" >terms</a>,<a href="#" >Privacy Policy</a> and<a href="#" >Cookies Policy</a> Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+      </div>
+      <div class="button-container"  >
+        @if(isEdit) {
+          <button>Update Employee</button>
+        }@else {
+          <button>Create Employee</button>
+        }
+        
+      </div>
+    </form>
+  </div> 
+ 
+</div>

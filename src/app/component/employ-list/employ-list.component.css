@@ -1,0 +1,30 @@
+.style-cls {
+    box-shadow: 0px 0px 10px;
+    height: 100vh;
+    background: linear-gradient(#380036, #0cbaba);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.cls-style {
+    background: blueviolet;
+    padding: 6px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+th,td {
+    color: #fff;
+    font-size: 20px;
+}
+.edit-style {
+    background: darkblue;
+    padding: 5px 17px;
+    border-radius: 4px;
+}
+.delete-style{
+    background-color: red;
+    padding: 5px 17px;
+    border-radius: 4px;
+
+}
